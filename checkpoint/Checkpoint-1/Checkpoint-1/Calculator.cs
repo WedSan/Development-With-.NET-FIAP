@@ -9,6 +9,20 @@ namespace Checkpoint_1
 
     internal class Calculator
     {
+
+        public String firstOperator { get; set; }
+
+        public String secondOperator { get; set; }
+
+        public String operation { get; set; }
+
+        public double result { get; set; }
+
+        public Calculator()
+        {
+
+        }
+        
         public double Sum(double x, double y)
         {
             return x + y;
