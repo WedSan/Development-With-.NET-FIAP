@@ -26,7 +26,9 @@ namespace Checkpoint_1
 
         public double Divide(double x, double y)
         {
-            return x / y;
+            if (y == 0)
+                throw new DivideByZeroException();
+            return x / y;       
         }
     }
 }
