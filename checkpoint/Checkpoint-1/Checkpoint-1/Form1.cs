@@ -12,9 +12,23 @@ namespace Checkpoint_1
 {
     public partial class Form1 : Form
     {
+
+        private String firstOperator;
+
+        private String secondOperator;
+
+        private String operation;
+
+        private double result;
+
+
         public Form1()
         {
             InitializeComponent();
+            firstOperator = "";
+            secondOperator = "";
+            operation = "";
+            result = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,10 +38,7 @@ namespace Checkpoint_1
             Button button = (Button)sender;
             
             String[] listMathOperations = {"+", "-", "X", "÷"};
-            String firstOperator = "";
-            String secondOperator = "";
-            String operation = "";
-            double result = 0;
+         
 
             if (listMathOperations.Contains(button.Text))
             {
@@ -40,14 +51,14 @@ namespace Checkpoint_1
                 {
                     if (!firstOperator.Contains(",") && firstOperator != "")
                     {
-                        firstOperator.Concat(",");
+                        firstOperator += ".";
                     }
                 }
                 else
                 {
                     if (!secondOperator.Contains(",") && secondOperator != "")
                     {
-                        secondOperator.Concat(",");
+                        secondOperator += ".";
                     }
                 }
             }
@@ -56,6 +67,7 @@ namespace Checkpoint_1
                 firstOperator = "";
                 secondOperator = "";
                 operation = "";
+                result = 0;
             }
             else if (button.Text.Equals("="))
             {
@@ -79,11 +91,11 @@ namespace Checkpoint_1
             {
                 if(operation == "")
                 {
-                    firstOperator.Concat(button.Text);
+                    firstOperator += button.Text;
                 }
                 else
                 {
-                    secondOperator.Concat(button.Text);
+                    secondOperator += button.Text;
                 }
             }
 
