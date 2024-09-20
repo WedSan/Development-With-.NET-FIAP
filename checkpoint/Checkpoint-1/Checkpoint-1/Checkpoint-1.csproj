@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
+    <Compile Include="command\AddDotCommand.cs" />
+    <Compile Include="command\AddOperatorCommand.cs" />
+    <Compile Include="command\CalculateCommand.cs" />
+    <Compile Include="command\ClearFieldCommand.cs" />
+    <Compile Include="command\DisplayResultCommand.cs" />
+    <Compile Include="command\InverseSignalCommand.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,5 +89,6 @@
   <ItemGroup>
     <Content Include=".gitignore" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
