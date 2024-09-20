@@ -30,5 +30,10 @@ namespace Checkpoint_1
                 throw new DivideByZeroException();
             return x / y;       
         }
+
+        public double CalculatePercentage(double value, double percentage)
+        {
+            return (value * percentage) / 100;
+        }
     }
 }
