@@ -37,7 +37,7 @@ namespace Checkpoint_1
 
             Button button = (Button)sender;
             
-            String[] listMathOperations = {"+", "-", "X", "÷"};
+            String[] listMathOperations = {"+", "-", "X", "÷", "%"};
          
 
             if (listMathOperations.Contains(button.Text))
@@ -49,14 +49,14 @@ namespace Checkpoint_1
             {
                 if(operation == "")
                 {
-                    if (!firstOperator.Contains(",") && firstOperator != "")
+                    if (!firstOperator.Contains(".") && firstOperator != "")
                     {
                         firstOperator += ".";
                     }
                 }
                 else
                 {
-                    if (!secondOperator.Contains(",") && secondOperator != "")
+                    if (!secondOperator.Contains(".") && secondOperator != "")
                     {
                         secondOperator += ".";
                     }
@@ -85,6 +85,52 @@ namespace Checkpoint_1
                     {
                         result = calculator.Subtract(firstOperatorNumber, secondOperatorNumber);
                     }
+                    else if(operation == "X")
+                    {
+                        result = calculator.Multiply(firstOperatorNumber, secondOperatorNumber);
+                    }
+                    else if(operation == "÷")
+                    {
+                        try
+                        {
+                            result = calculator.Divide(firstOperatorNumber, secondOperatorNumber);
+                        }
+                        catch (DivideByZeroException ex)
+                        { 
+                            this.textBox1.Text = "Zero cannot be divided";
+                            return;
+                        }
+              
+                    }
+                    else if(operation == "%")
+                    {
+                        result = calculator.CalculatePercentage(firstOperatorNumber, secondOperatorNumber);
+                    }
+                }
+            }
+            else if(button.Text == "+/-")
+            {
+                if(operation == "")
+                {
+                    if (firstOperator.Contains("-")) 
+                    {
+                        firstOperator = firstOperator.Remove(0, 1);
+                    }
+                    else if(firstOperator != "")
+                    {
+                        firstOperator = firstOperator.Insert(0, "-");
+                    }
+                }
+                else
+                {
+                    if (secondOperator.Contains("-"))
+                    {
+                        secondOperator = secondOperator.Remove(0, 1);
+                    }
+                    else if(secondOperator != "")
+                    {
+                        secondOperator = secondOperator.Insert(0, "-");
+                    }
                 }
             }
             else
@@ -99,7 +145,18 @@ namespace Checkpoint_1
                 }
             }
 
-            this.textBox1.Text = result != 0 ? result.ToString() : firstOperator + " " + operation + " " + secondOperator;
+            if(result != 0)
+            {
+                this.textBox1.Text = result.ToString();
+                firstOperator = result.ToString();
+                secondOperator = "";
+                operation = "";
+                result = 0;
+            }
+            else
+            {
+                this.textBox1.Text = firstOperator + " " + operation + " " + secondOperator;
+            }
             Console.WriteLine(this.textBox1.Text);
         }
 
