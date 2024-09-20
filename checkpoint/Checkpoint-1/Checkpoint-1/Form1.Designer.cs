@@ -72,6 +72,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "=";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -191,6 +192,7 @@
             this.button12.TabIndex = 1;
             this.button12.Text = "+";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button1_Click);
             // 
             // button13
             // 
@@ -202,6 +204,7 @@
             this.button13.TabIndex = 1;
             this.button13.Text = "-";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button1_Click);
             // 
             // button14
             // 
@@ -213,6 +216,7 @@
             this.button14.TabIndex = 1;
             this.button14.Text = "X";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button1_Click);
             // 
             // button15
             // 
@@ -224,6 +228,7 @@
             this.button15.TabIndex = 1;
             this.button15.Text = "÷";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button1_Click);
             // 
             // button16
             // 
@@ -247,6 +252,7 @@
             this.button17.TabIndex = 1;
             this.button17.Text = "%";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button1_Click);
             // 
             // button18
             // 
@@ -259,6 +265,7 @@
             this.button18.TabIndex = 1;
             this.button18.Text = "C";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button1_Click);
             // 
             // button19
             // 
