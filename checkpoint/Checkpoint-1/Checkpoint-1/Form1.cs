@@ -15,56 +15,24 @@ namespace Checkpoint_1
     {
         private Calculator calculator;
 
+        private CalculatorInvoker invoker;
+
         public Form1()
         {
             InitializeComponent();
             this.calculator = new Calculator();
+            CalculatorDisplay display = new CalculatorDisplay(this.textBox1, calculator);
+            this.invoker = new CalculatorInvoker(display);
         }
 
         private void button1_Click(object sender, EventArgs e)
         { 
 
             Button button = (Button)sender;
-            
-            String[] listMathOperations = {"+", "-", "X", "÷", "%"};
-         
 
-            if (listMathOperations.Contains(button.Text))
-            {
-                int operationIndex = Array.IndexOf(listMathOperations, button.Text);
-                calculator.operation = listMathOperations[operationIndex];
-            }
-            else if(button.Text.Equals(","))
-            {
-                new AddDotCommand(calculator).Execute();
-            }
-            else if (button.Text.Equals("C"))
-            {
-               new ClearFieldCommand(calculator).Execute();
-            }
-            else if (button.Text.Equals("="))
-            {
-                try
-                {
-                    new CalculateCommand(calculator).Execute();
-                }
-                catch(DivideByZeroException ex)
-                {
-                    this.textBox1.Text = "Zero cannot be divided";
-                    return;
-                }
-            }
-            else if(button.Text == "+/-")
-            {
-               new InverseSignalCommand(calculator).Execute();
-            }
-            else
-            {
-              new AddOperatorCommand(calculator, button).Execute();
-            }
-
-            new DisplayResultCommand(calculator, this.textBox1).Execute();
-            Console.WriteLine(this.textBox1.Text);
+            ICalculatorCommand command = new CalculatorCommandFactory().CreateCalculatorCommand(button, calculator);
+            invoker.SetCommand(command);
+            invoker.ExecuteCommand();
         }
 
         private void Form1_Load(object sender, EventArgs e)
