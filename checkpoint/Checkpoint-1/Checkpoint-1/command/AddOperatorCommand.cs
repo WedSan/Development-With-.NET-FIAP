@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Checkpoint_1.command
 {
-    internal class AddOperatorCommand
+    internal class AddOperatorCommand : ICalculatorCommand
     {
         private Calculator calculator;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkpoint_1.command
 {
-    internal class ClearFieldCommand
+    internal class ClearFieldCommand : ICalculatorCommand
     {
         private Calculator calculator;
 

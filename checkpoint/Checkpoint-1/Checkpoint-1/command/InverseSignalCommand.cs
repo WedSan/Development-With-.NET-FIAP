@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkpoint_1.command
 {
-    internal class InverseSignalCommand
+    internal class InverseSignalCommand : ICalculatorCommand
     {
         private Calculator calculator;
 

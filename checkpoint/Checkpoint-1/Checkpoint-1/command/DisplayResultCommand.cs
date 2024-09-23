@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Checkpoint_1.command
 {
-    internal class DisplayResultCommand
+    internal class DisplayResultCommand : ICalculatorCommand
     {
 
         private TextBox textBox;
