@@ -46,6 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculator.cs" />
+    <Compile Include="CalculatorDisplay.cs" />
+    <Compile Include="command\AddDotCommand.cs" />
+    <Compile Include="command\AddOperandCommand.cs" />
+    <Compile Include="command\CalculateCommand.cs" />
+    <Compile Include="command\CalculatorCommandFactory.cs" />
+    <Compile Include="command\CalculatorInvoker.cs" />
+    <Compile Include="command\ClearFieldCommand.cs" />
+    <Compile Include="command\ICalculatorCommand.cs" />
+    <Compile Include="command\InverseSignalCommand.cs" />
+    <Compile Include="command\SetOperatorCommand.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,5 +93,6 @@
   <ItemGroup>
     <Content Include=".gitignore" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
