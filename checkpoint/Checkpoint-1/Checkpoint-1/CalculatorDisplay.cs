@@ -5,21 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Checkpoint_1.command
+namespace Checkpoint_1
 {
-    internal class DisplayResultCommand : ICalculatorCommand
+    internal class CalculatorDisplay
     {
+        private Calculator calculator;
 
         private TextBox textBox;
 
-        private Calculator calculator;
-        public DisplayResultCommand(Calculator calculator, TextBox textBox) 
+        public CalculatorDisplay(TextBox textBox, Calculator calculator)
         {
             this.calculator = calculator;
             this.textBox = textBox;
         }
 
-        public void Execute()
+        public void UpdateDisplay()
         {
             if (calculator.result != 0)
             {
@@ -33,6 +33,11 @@ namespace Checkpoint_1.command
             {
                 textBox.Text = calculator.firstOperator + " " + calculator.operation + " " + calculator.secondOperator;
             }
+        }
+
+        public void UpdateDisplayError(String errorMessage)
+        {
+            this.textBox.Text = errorMessage;
         }
     }
 }
