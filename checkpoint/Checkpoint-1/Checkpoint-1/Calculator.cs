@@ -20,7 +20,10 @@ namespace Checkpoint_1
 
         public Calculator()
         {
-
+            this.firstOperator = "";
+            this.secondOperator = "";
+            this.operation = "";
+            this.result = 0;
         }
         
         public double Sum(double x, double y)
