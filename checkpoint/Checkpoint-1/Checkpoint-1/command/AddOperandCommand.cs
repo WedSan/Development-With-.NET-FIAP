@@ -7,13 +7,13 @@ using System.Windows.Forms;
 
 namespace Checkpoint_1.command
 {
-    internal class AddOperatorCommand : ICalculatorCommand
+    internal class AddOperandCommand : ICalculatorCommand
     {
         private Calculator calculator;
 
         private Button button;
 
-        public AddOperatorCommand(Calculator calculator, Button buttonEvent)
+        public AddOperandCommand(Calculator calculator, Button buttonEvent)
         {
             this.calculator = calculator;
             this.button = buttonEvent;
@@ -21,13 +21,13 @@ namespace Checkpoint_1.command
 
         public void Execute()
         {
-            if (calculator.operation == "")
+            if (calculator.calculatorOperator == "")
             {
-                calculator.firstOperator += button.Text;
+                calculator.firstOperand += button.Text;
             }
             else
             {
-                calculator.secondOperator += button.Text;
+                calculator.secondOperand += button.Text;
             }
         }
     }

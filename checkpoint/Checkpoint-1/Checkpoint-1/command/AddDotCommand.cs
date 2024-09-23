@@ -17,18 +17,18 @@ namespace Checkpoint_1.command
 
         public void Execute()
         {
-            if (calculator.operation == "")
+            if (calculator.calculatorOperator == "")
             {
-                if (!calculator.firstOperator.Contains(".") && calculator.firstOperator != "")
+                if (!calculator.firstOperand.Contains(".") && calculator.firstOperand != "")
                 {
-                    calculator.firstOperator += ".";
+                    calculator.firstOperand += ".";
                 }
             }
             else
             {
-                if (!calculator.secondOperator.Contains(".") && calculator.secondOperator != "")
+                if (!calculator.secondOperand.Contains(".") && calculator.secondOperand != "")
                 {
-                    calculator.secondOperator += ".";
+                    calculator.secondOperand += ".";
                 }
             }
         }

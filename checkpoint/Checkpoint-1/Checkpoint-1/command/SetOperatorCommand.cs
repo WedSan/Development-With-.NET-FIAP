@@ -20,7 +20,7 @@ namespace Checkpoint_1.command
 
         public void Execute()
         {
-            calculator.operation = this.calculatorOperator;
+            calculator.calculatorOperator = this.calculatorOperator;
             return;
         }
     }

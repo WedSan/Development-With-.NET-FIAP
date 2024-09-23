@@ -24,14 +24,14 @@ namespace Checkpoint_1
             if (calculator.result != 0)
             {
                 textBox.Text = calculator.result.ToString();
-                calculator.firstOperator = calculator.result.ToString();
-                calculator.secondOperator = "";
-                calculator.operation = "";
+                calculator.firstOperand = calculator.result.ToString();
+                calculator.secondOperand = "";
+                calculator.calculatorOperator = "";
                 calculator.result = 0;
             }
             else
             {
-                textBox.Text = calculator.firstOperator + " " + calculator.operation + " " + calculator.secondOperator;
+                textBox.Text = calculator.firstOperand + " " + calculator.calculatorOperator + " " + calculator.secondOperand;
             }
         }
 

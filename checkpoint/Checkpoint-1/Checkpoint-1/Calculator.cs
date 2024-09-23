@@ -10,19 +10,19 @@ namespace Checkpoint_1
     internal class Calculator
     {
 
-        public String firstOperator { get; set; }
+        public String firstOperand { get; set; }
 
-        public String secondOperator { get; set; }
+        public String secondOperand { get; set; }
 
-        public String operation { get; set; }
+        public String calculatorOperator { get; set; }
 
         public double result { get; set; }
 
         public Calculator()
         {
-            this.firstOperator = "";
-            this.secondOperator = "";
-            this.operation = "";
+            this.firstOperand = "";
+            this.secondOperand = "";
+            this.calculatorOperator = "";
             this.result = 0;
         }
         

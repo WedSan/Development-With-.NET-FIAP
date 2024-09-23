@@ -18,26 +18,26 @@ namespace Checkpoint_1.command
 
         public void Execute()
         {
-            if (calculator.operation == "")
+            if (calculator.calculatorOperator == "")
             {
-                if (calculator.firstOperator.Contains("-"))
+                if (calculator.firstOperand.Contains("-"))
                 {
-                    calculator.firstOperator = calculator.firstOperator.Remove(0, 1);
+                    calculator.firstOperand = calculator.firstOperand.Remove(0, 1);
                 }
-                else if (calculator.firstOperator != "")
+                else if (calculator.firstOperand != "")
                 {
-                    calculator.firstOperator = calculator.firstOperator.Insert(0, "-");
+                    calculator.firstOperand = calculator.firstOperand.Insert(0, "-");
                 }
             }
             else
             {
-                if (calculator.secondOperator.Contains("-"))
+                if (calculator.secondOperand.Contains("-"))
                 {
-                    calculator.secondOperator = calculator.secondOperator.Remove(0, 1);
+                    calculator.secondOperand = calculator.secondOperand.Remove(0, 1);
                 }
-                else if (calculator.secondOperator != "")
+                else if (calculator.secondOperand != "")
                 {
-                    calculator.secondOperator = calculator.secondOperator.Insert(0, "-");
+                    calculator.secondOperand = calculator.secondOperand.Insert(0, "-");
                 }
             }
         }

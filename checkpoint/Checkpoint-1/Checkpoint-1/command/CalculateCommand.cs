@@ -17,29 +17,29 @@ namespace Checkpoint_1.command
 
         public void Execute()
         {
-            if (calculator.firstOperator != "" && calculator.secondOperator != "")
+            if (calculator.firstOperand != "" && calculator.secondOperand != "")
             {
-                double firstOperatorNumber = Double.Parse(calculator.firstOperator);
-                double secondOperatorNumber = Double.Parse(calculator.secondOperator);
+                double firstOperatorNumber = Double.Parse(calculator.firstOperand);
+                double secondOperatorNumber = Double.Parse(calculator.secondOperand);
 
 
-                if (calculator.operation == "+")
+                if (calculator.calculatorOperator == "+")
                 {
                     calculator.result = calculator.Sum(firstOperatorNumber, secondOperatorNumber);
                 }
-                else if (calculator.operation == "-")
+                else if (calculator.calculatorOperator == "-")
                 {
                     calculator.result = calculator.Subtract(firstOperatorNumber, secondOperatorNumber);
                 }
-                else if (calculator.operation == "X")
+                else if (calculator.calculatorOperator == "X")
                 {
                     calculator.result = calculator.Multiply(firstOperatorNumber, secondOperatorNumber);
                 }
-                else if (calculator.operation == "÷")
+                else if (calculator.calculatorOperator == "÷")
                 {
                     calculator.result = calculator.Divide(firstOperatorNumber, secondOperatorNumber);                    
                 }
-                else if (calculator.operation == "%")
+                else if (calculator.calculatorOperator == "%")
                 {
                     calculator.result = calculator.CalculatePercentage(firstOperatorNumber, secondOperatorNumber);
                 }

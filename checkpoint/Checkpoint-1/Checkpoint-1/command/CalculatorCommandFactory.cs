@@ -36,7 +36,7 @@ namespace Checkpoint_1.command
                     return new InverseSignalCommand(calculator);
 
                 default:
-                    return new AddOperatorCommand(calculator, button);
+                    return new AddOperandCommand(calculator, button);
             }
         }
     }

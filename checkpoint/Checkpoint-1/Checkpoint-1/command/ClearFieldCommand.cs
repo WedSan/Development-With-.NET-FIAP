@@ -17,9 +17,9 @@ namespace Checkpoint_1.command
 
         public void Execute()
         {
-            calculator.firstOperator = "";
-            calculator.secondOperator = "";
-            calculator.operation = "";
+            calculator.firstOperand = "";
+            calculator.secondOperand = "";
+            calculator.calculatorOperator = "";
             calculator.result = 0;
         }
     }
