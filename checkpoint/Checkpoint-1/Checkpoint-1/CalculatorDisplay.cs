@@ -21,13 +21,13 @@ namespace Checkpoint_1
 
         public void UpdateDisplay()
         {
-            if (calculator.result != 0)
+            if (calculator.result != Double.MinValue)
             {
                 textBox.Text = calculator.result.ToString();
                 calculator.firstOperand = calculator.result.ToString();
                 calculator.secondOperand = "";
                 calculator.calculatorOperator = "";
-                calculator.result = 0;
+                calculator.result = Double.MinValue;
             }
             else
             {

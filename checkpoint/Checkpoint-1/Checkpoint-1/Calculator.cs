@@ -23,7 +23,7 @@ namespace Checkpoint_1
             this.firstOperand = "";
             this.secondOperand = "";
             this.calculatorOperator = "";
-            this.result = 0;
+            this.result = Double.MinValue;
         }
         
         public double Sum(double x, double y)

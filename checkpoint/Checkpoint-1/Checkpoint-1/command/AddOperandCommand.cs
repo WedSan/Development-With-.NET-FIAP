@@ -23,12 +23,26 @@ namespace Checkpoint_1.command
         {
             if (calculator.calculatorOperator == "")
             {
+                calculator.firstOperand = RemoveFirstZeroDigit(calculator.firstOperand);
                 calculator.firstOperand += button.Text;
             }
             else
             {
+                calculator.secondOperand = RemoveFirstZeroDigit(calculator.secondOperand);
                 calculator.secondOperand += button.Text;
             }
+        }
+
+        private String RemoveFirstZeroDigit(String operand)
+        {
+            if (operand.Length == 1)
+            {
+                if (operand[0].Equals('0'))
+                {
+                    operand = operand.Remove(0, 1);
+                }
+            }
+            return operand;
         }
     }
 
