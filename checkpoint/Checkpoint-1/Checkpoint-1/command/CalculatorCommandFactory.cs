@@ -14,26 +14,29 @@ namespace Checkpoint_1.command
         public ICalculatorCommand CreateCalculatorCommand(Button button, Calculator calculator)
         {
 
-            
-            if (button.Text.Equals(","))
+            switch (button.Text)
             {
-                new AddDotCommand(calculator).Execute();
-            }
-            else if (button.Text.Equals("C"))
-            {
-                new ClearFieldCommand(calculator).Execute();
-            }
-            else if (button.Text.Equals("="))
-            {
-                new CalculateCommand(calculator).Execute();
-            }
-            else if (button.Text == "+/-")
-            {
-                new InverseSignalCommand(calculator).Execute();
-            }
-            else
-            {
-                new AddOperatorCommand(calculator, button).Execute();
+                case "+":
+                case "-":
+                case "X":
+                case "÷":
+                case "%":
+                    return new SetOperatorCommand(button.Text, calculator);
+
+                case ",":
+                    return new AddDotCommand(calculator);
+
+                case "C":
+                    return new ClearFieldCommand(calculator);
+
+                case "=":
+                    return new CalculateCommand(calculator);
+
+                case "+/-":
+                    return new InverseSignalCommand(calculator);
+
+                default:
+                    return new AddOperatorCommand(calculator, button);
             }
         }
     }
