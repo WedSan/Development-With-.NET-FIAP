@@ -1,0 +1,97 @@
+﻿# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Rider directories
+.idea/
+
+# Log files
+*.log
+
+# DotNet specific files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+project.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Stylescop & Resharper directories
+.ReSharper/
+stylecop.json
+
+# NCrunch
+.ncrunchsolution
+*.ncrunchproject
+*.ncrunchsolution
+
+# Entity Framework Migrations
+Migrations/
+
+# Web specific files
+wwwroot/node_modules/
+wwwroot/lib/
+
+# ASP.NET Generated Files
+Generated_Code/
+
+# Paket dependency manager
+.paket/
+paket-files/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Backup & other temporary files
+*.bak
+~$*
+*.tmp
+*.temp
+*.tmp
+
+# DotNet Console & System Config
+.vs/
+test-results/
+TestResults/
+launchSettings.json
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+# The following line can be added if the packages should be checked in with the project
+# !packages/build/
+
+# Rider File Types
+*.sln.iml
+*.idea/
+
+# Dependency directories and files
+node_modules/
+jspm_packages/
