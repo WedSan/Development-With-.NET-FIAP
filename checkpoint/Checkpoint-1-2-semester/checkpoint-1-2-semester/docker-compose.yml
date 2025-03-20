@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  app:
+    image: checkpoint-1-2-semester:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionString=Host=db;Port=5432;Database=wedsanDatabase;Username=wedsan;Password=securepassword
+    depends_on:
+      - db
+
+  db:
+    image: postgres:17-alpine
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: wedsan
+      POSTGRES_PASSWORD: securepassword
+      POSTGRES_DB: wedsanDatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local
