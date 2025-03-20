@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Toy>
+
+@{
+    ViewData["Title"] = "Lista de Brinquedos";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Toy Management</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <p>
+            <a href="@Url.Action("Create")" class="btn btn-primary">Criar Novo Brinquedo</a>
+        </p>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Classificação</th>
+                    <th>Tamanho</th>
+                    <th>Preço</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ToyName</td>
+                        <td>@item.ToyType</td>
+                        <td>@item.Classification</td>
+                        <td>@item.Size</td>
+                        <td>@item.Price</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = item.ToyId })" class="btn btn-warning">Editar</a>
+                            <a href="@Url.Action("Details", new { id = item.ToyId })" class="btn btn-info">Detalhes</a>
+                            <a href="@Url.Action("Delete", new { id = item.ToyId })" class="btn btn-danger">Deletar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
