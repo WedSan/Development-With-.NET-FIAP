@@ -1,0 +1,76 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E727AC53-D147-409C-9245-BE1554B2B35A}|checkpoint-5.csproj|c:\\users\\andre\\fiap-aula\\development-with-.net-fiap\\checkpoint\\checkpoint-1-2-semester\\checkpoint-5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E727AC53-D147-409C-9245-BE1554B2B35A}|checkpoint-5.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E727AC53-D147-409C-9245-BE1554B2B35A}|checkpoint-5.csproj|c:\\users\\andre\\fiap-aula\\development-with-.net-fiap\\checkpoint\\checkpoint-1-2-semester\\checkpoint-5\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E727AC53-D147-409C-9245-BE1554B2B35A}|checkpoint-5.csproj|solutionrelative:worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 768,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T00:27:32.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\Worker.cs",
+              "RelativeDocumentMoniker": "Worker.cs",
+              "ToolTip": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\Worker.cs",
+              "RelativeToolTip": "Worker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T00:27:23.239Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 196,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
