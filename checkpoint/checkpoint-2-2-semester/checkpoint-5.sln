@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkpoint-5", "checkpoint-5.csproj", "{E727AC53-D147-409C-9245-BE1554B2B35A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkpoint5-receiver", "..\checkpoint5-receiver\checkpoint5-receiver.csproj", "{ABB53A7A-8F1D-47A7-BBA2-57788B396213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkpoint5-validator", "..\checkpoint5-validator\checkpoint5-validator.csproj", "{DE962ED7-5677-4BA6-B2E1-7874D78532F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{E727AC53-D147-409C-9245-BE1554B2B35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E727AC53-D147-409C-9245-BE1554B2B35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E727AC53-D147-409C-9245-BE1554B2B35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB53A7A-8F1D-47A7-BBA2-57788B396213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB53A7A-8F1D-47A7-BBA2-57788B396213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB53A7A-8F1D-47A7-BBA2-57788B396213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB53A7A-8F1D-47A7-BBA2-57788B396213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE962ED7-5677-4BA6-B2E1-7874D78532F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE962ED7-5677-4BA6-B2E1-7874D78532F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE962ED7-5677-4BA6-B2E1-7874D78532F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE962ED7-5677-4BA6-B2E1-7874D78532F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

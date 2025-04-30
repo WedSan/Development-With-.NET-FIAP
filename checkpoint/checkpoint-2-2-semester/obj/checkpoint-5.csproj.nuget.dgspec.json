@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\checkpoint-5.csproj": {}
+    "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\checkpoint-5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\checkpoint-5.csproj": {
+    "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\checkpoint-5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\checkpoint-5.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\checkpoint-5.csproj",
         "projectName": "checkpoint-5",
-        "projectPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\checkpoint-5.csproj",
+        "projectPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\checkpoint-5.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\obj\\",
+        "outputPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "H:\\VisualStudioExtra\\NuGetPackages"
@@ -53,6 +53,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

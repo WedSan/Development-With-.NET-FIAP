@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9uHMsAqlKBQ=",
+  "dgSpecHash": "lWbpzSSRc2E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\checkpoint-5.csproj",
+  "projectFilePath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\checkpoint-5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -31,7 +31,9 @@
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.1\\system.diagnostics.eventlog.8.0.1.nupkg.sha512"
+    "C:\\Users\\andre\\.nuget\\packages\\rabbitmq.client\\6.0.0\\rabbitmq.client.6.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.1\\system.diagnostics.eventlog.8.0.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

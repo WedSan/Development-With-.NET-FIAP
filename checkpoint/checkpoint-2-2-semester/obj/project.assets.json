@@ -578,6 +578,22 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "RabbitMQ.Client/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.Diagnostics.EventLog/8.0.1": {
         "type": "package",
         "compile": {
@@ -602,6 +618,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
         }
       }
     }
@@ -1497,6 +1522,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "RabbitMQ.Client/6.0.0": {
+      "sha512": "8e7KK44Fai72F452GF8KxUAW5t+ik3rUcalpQaxQNv6DxZyQTgVioWfyYSGYF6qpUqDdy7ZmvD3Zgkm7pKNR9w==",
+      "type": "package",
+      "path": "rabbitmq.client/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/net461/RabbitMQ.Client.dll",
+        "lib/net461/RabbitMQ.Client.pdb",
+        "lib/net461/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.pdb",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.6.0.0.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "System.Diagnostics.EventLog/8.0.1": {
       "sha512": "n1ZP7NM2Gkn/MgD8+eOT5MulMj6wfeQMNS2Pizvq5GHCZfjlFMXV2irQlQmJhwA2VABC57M0auudO89Iu2uRLg==",
       "type": "package",
@@ -1535,11 +1579,35 @@
         "system.diagnostics.eventlog.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.Extensions.Hosting >= 8.0.1"
+      "Microsoft.Extensions.Hosting >= 8.0.1",
+      "RabbitMQ.Client >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -1549,11 +1617,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\checkpoint-5.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\checkpoint-5.csproj",
       "projectName": "checkpoint-5",
-      "projectPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\checkpoint-5.csproj",
+      "projectPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\checkpoint-5.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\Checkpoint-1-2-semester\\checkpoint-5\\obj\\",
+      "outputPath": "C:\\Users\\andre\\FIAP-AULA\\Development-With-.NET-FIAP\\checkpoint\\checkpoint-2-2-semester\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "H:\\VisualStudioExtra\\NuGetPackages"
@@ -1595,6 +1663,10 @@
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[8.0.1, )"
+          },
+          "RabbitMQ.Client": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [
